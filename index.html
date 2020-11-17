@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Ремонт и обслуживание спецтехники</title>
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
                             <img src="http://spparts.spb.ru/img/logo.png" alt="">
                         </li>
                         <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> 8 (800) 201 33 48 </a></li>
-                        <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Санкт-Петербург, Индустриальная ул 3 корпус 1</a></li>
+                        <li><a href="#map"><i class="fa fa-map-marker" aria-hidden="true"></i> Санкт-Петербург, Индустриальная ул 3 корпус 1</a></li>
                         <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i> info@spparts.spb.ru</a></li>
                     </ul>
                 </div>
@@ -98,7 +101,7 @@
                             </a>
                         </li>
                         <li id="getCall">
-                            <a href="">
+                            <a href="#Form_call">
                                 Заказать звонок
                             </a>
                         </li>
@@ -108,12 +111,50 @@
         </header>
         <main>
             <section id="first">
+                <div class="pseudoBack">
+                    <div class="wrapper">
+                        <div class="flex-center">
+                            <div class="half_block">
+                                <div class="down_text">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <div class="self_text">
+                                        <p>Работаем круглосуточно</p>
+                                        <p class="small">готовы выехать к вам</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half_block">
+                                <div class="form_feedback_first">
+                                    <form action="/" autocomplete="off" id="Form_call">
+                                        <div class="caption">
+                                            Оставьте заявку
+                                        </div>
+                                        <div class="precaption">
+                                            вам перезвонят в ближайшем времени
+                                        </div>
+                                        <input type="text" name="name" placeholder="Ваше имя" required>
+                                        <input type="tel" name="tel" placeholder="Ваш телефон" required>
+                                        <input type="submit" value="Отправить заявку">
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="second">
                 <div class="wrapper">
-                    123
+                    <div class="flex-center">
+                        123
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
+            <div class="ontop">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
             <div class="wrapper">
                 <div class="half_block">
                     <div class="colFooter">
@@ -163,7 +204,7 @@
                             <li class="textList border">
                                 <a href="">8 (800) 201 33 48</a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -192,8 +233,17 @@
                     </div>
 
                 </div>
-                <div class="fullFrameBLock">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac366fdbcf3b294749ce6b90330a6d21cd94eef8e9e385eecc397a551cbddb874&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                <div class="fullFrameBLock" >
+                    <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac366fdbcf3b294749ce6b90330a6d21cd94eef8e9e385eecc397a551cbddb874&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+                <div class="fullFrameBlock">
+                    <div class="colFooter">
+                        <ul class="listFooter">
+                            <li class="textList">
+                                design made by EVGZAP
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
