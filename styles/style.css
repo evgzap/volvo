@@ -1,0 +1,196 @@
+.half_block {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+main .wrapper {
+  padding: 10px 20px;
+}
+main .wrapper .flex-center {
+  display: flex;
+  justify-content: center;
+}
+main #first {
+  background-size: 100%;
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  background-image: url("/images/1.png");
+  background-attachment: fixed;
+}
+main #first .pseudoBack {
+  height: 100%;
+  width: 100%;
+  background: rgba(181, 206, 222, 0.69);
+}
+main #first .flex-center {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main #first .half_block {
+  justify-content: center;
+}
+main #first .half_block .form_feedback_first {
+  background: rgba(17, 91, 167, 0.85);
+  width: 350px;
+  border: 2px solid #187FC4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+main #first .half_block .form_feedback_first form {
+  width: 300px;
+}
+main #first .half_block .form_feedback_first form input {
+  width: 300px;
+  box-sizing: border-box;
+  border: none;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+main #first .half_block .form_feedback_first form input[type=submit] {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #187FC4;
+  color: white;
+  transition: background 0.2s ease;
+  font-family: "Noto Sans JP", sans-serif;
+  cursor: pointer;
+}
+main #first .half_block .form_feedback_first form input[type=submit]:hover {
+  background: #218ad0;
+}
+main #first .half_block .form_feedback_first form input:last-child {
+  margin-bottom: 30px;
+}
+main #first .half_block .form_feedback_first .caption {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+main #first .half_block .form_feedback_first .precaption {
+  color: #e6e6e6;
+  font-size: 0.9rem;
+  margin: 10px 0 30px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+main #first .half_block .down_text {
+  width: 100%;
+  margin-top: 30%;
+  font-family: "Open Sans", sans-serif;
+  color: #0a4a76;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background: rgba(252, 252, 252, 0.34);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+main #first .half_block .down_text i {
+  margin-right: 20px;
+  font-size: 3rem;
+}
+main #first .half_block .down_text .small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main #second {
+  background: #f0f0f0;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: #33343a;
+  color: white;
+}
+footer .ontop {
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  background: #25262a;
+  position: relative;
+}
+footer .ontop:hover {
+  background: #3a3c43;
+}
+footer .ontop i {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10%;
+}
+footer .listFooter {
+  display: block;
+}
+footer .listFooter .namedList {
+  color: white;
+  cursor: default;
+  margin-top: 15px;
+}
+footer .listFooter .namedList i {
+  width: 20px;
+}
+footer .listFooter li {
+  padding: 3px 0;
+  font-size: 0.9rem;
+  color: #b3b8ba;
+  font-weight: 600;
+}
+footer .listFooter li.border {
+  border-bottom: 1px solid #aaa;
+}
+footer .listFooter li.textList {
+  padding-bottom: 10px;
+}
+footer .listFooter li.textList a {
+  transition: all 0.3s ease;
+}
+footer .listFooter li.textList a:hover {
+  color: white;
+}
+footer .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+footer .wrapper .fullFrameBLock {
+  margin-top: 30px;
+  width: 100%;
+}
+footer .wrapper .fullFrameBLock iframe {
+  filter: grayscale(0.5);
+  border-radius: 10px;
+}
+footer .wrapper .half_block {
+  margin-top: 30px;
+}
+footer .wrapper .half_block .colFooter {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 2%;
+}
+footer .wrapper .half_block .colFooter .footerTitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
